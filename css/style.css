@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=League+Gothic&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=League+Gothic&family=League+Spartan:wght@100..900&display=swap');
+
+
+:root{
+    --title-font: "League Gothic", "Archivo", Arial, sans-serif;
+    --subtitle-font: "League Spartan", "Archivo", Arial, sans-serif;
+    --default-border-padding: 48px 124px;
+}
+
+/* .league-gothic-<uniquifier> {
+  font-family: "League Gothic", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+} */
+
+*{
+    margin: 0;
+    padding: 0;
+    font-style: normal;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-variation-settings: "wdth" 100;
+    color: white;
+    box-sizing: border-box;
+}
+
+.container{
+    max-width: 100%;
+    margin: auto;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    gap: 30%;
+    height: 880px;
+    background-color: black;
+    padding: var(--default-border-padding);
+
+}
+
+nav .logo picture img{
+    max-width: 52px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.titulo{
+    text-align: center;
+}
+
+.titulo h1{
+    font-family: var(--title-font);
+    font-size: 96px;
+}
+
+.titulo p{
+    font-family: var(--subtitle-font);
+    font-size: 32px;
+    letter-spacing: 5px;
+}
+
+.logo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
