@@ -82,7 +82,7 @@ main{
 }
 
 main .center section{
-    margin: 52px 0;
+    margin-bottom: 52px;
 }
 
 main .center section h2, main .center section p , main section{
@@ -135,19 +135,38 @@ main .center section p{
 .row-projetos{
     display: flex;
     justify-content: space-evenly;
+    height: 410px;
 }
 
 .projeto{
+    padding: 24px;
+    position: relative;
+}
+
+.bg-img{
     width: 310px;
     height: 410px;
     background-color: black;
     background-image: url(../img/project-card-image-size\ 1.png);
-    padding: 24px;
+    position: absolute;
+    filter: blur(3px);
     transition: .5s;
 }
 
-.projeto:hover{
+.row-projetos a{
+    transition: .5s;
+}
+
+.row-projetos a:hover{
     transform: scale(1.12);
+}
+
+.noblur{
+    filter: blur(0px);
+}
+
+.bg-img.noblur{
+    filter: blur(0px);
 }
 
 .projeto h3, .projeto p{
@@ -159,7 +178,7 @@ main .center section p{
     font-size: 20px;
 }
 
-projeto p{
+.projeto p{
     font-size: 16px;
 }
 
