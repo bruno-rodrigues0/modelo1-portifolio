@@ -160,7 +160,7 @@ main .center section p {
     transition: .5s;
 }
 
-.row-projetos a:hover {
+.zoomin{
     transform: scale(1.12);
 }
 
