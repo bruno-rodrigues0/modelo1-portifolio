@@ -138,11 +138,16 @@ main .center section p{
 }
 
 .projeto{
-    width: 360px;
-    height: 460px;
+    width: 310px;
+    height: 410px;
     background-color: black;
     background-image: url(../img/project-card-image-size\ 1.png);
     padding: 24px;
+    transition: .5s;
+}
+
+.projeto:hover{
+    transform: scale(1.12);
 }
 
 .projeto h3, .projeto p{
