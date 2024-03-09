@@ -34,7 +34,6 @@ header{
     height: 880px;
     background-color: black;
     padding: var(--default-border-padding);
-
 }
 
 nav .logo picture img{
@@ -66,4 +65,46 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+
+main{
+    height: 100vh;
+}
+
+
+/* footer style */
+
+footer{
+    padding: var(--default-border-padding);
+    display: flex;
+    justify-content: space-between;
+    height: 440px;
+    background-color: black;
+    font-family: var(--subtitle-font);
+}
+
+
+footer ul{
+    display: flex;
+    list-style: none;
+}
+
+footer ul li {
+    padding: 16px;
+}
+
+.ftr-contato{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 2.0;
+}
+
+.footer-logo img{
+    max-width: 52px;
+}
+
+a, a:visited{
+    text-decoration: none;
 }
