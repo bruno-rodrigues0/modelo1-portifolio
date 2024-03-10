@@ -4,14 +4,18 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=League+Gothic&family=League+Spartan:wght@100..900&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=League+Gothic&family=League+Spartan:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-:root{
+
+
+:root {
     --title-font: "League Gothic", "Archivo", Arial, sans-serif;
     --subtitle-font: "League Spartan", "Archivo", Arial, sans-serif;
     --default-border-padding: 48px 124px;
+    --text-font: "Roboto", Arial, sans-serif;
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     font-style: normal;
@@ -22,12 +26,12 @@
     box-sizing: border-box;
 }
 
-.container{
+.container {
     max-width: 100%;
     margin: auto;
 }
 
-header{
+header {
     display: flex;
     flex-direction: column;
     gap: 30%;
@@ -36,46 +40,186 @@ header{
     padding: var(--default-border-padding);
 }
 
-nav .logo picture img{
+nav .logo picture img {
     max-width: 52px;
 }
 
-nav{
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.titulo{
+.titulo {
     text-align: center;
 }
 
-.titulo h1{
+.titulo h1 {
     font-family: var(--title-font);
     font-size: 96px;
 }
 
-.titulo p{
+.titulo p {
     font-family: var(--subtitle-font);
     font-size: 32px;
     letter-spacing: 5px;
 }
 
-.logo{
+.logo {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 
-main{
-    height: 100vh;
+/* main style */
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: var(--default-border-padding);
+}
+
+main .center section {
+    margin-bottom: 52px;
+}
+
+main .center section h2,
+main .center section p,
+main section {
+    color: black;
+}
+
+main .center section h2 {
+    font-family: var(--subtitle-font);
+    font-size: 32px;
+    font-weight: bold;
+}
+
+main .center section p {
+    font-family: var(--text-font);
+    font-size: 16px;
+    text-align: justify;
+}
+
+.center {
+    max-width: 560px;
 }
 
 
+.skills {
+    display: grid;
+    max-width: 100%;
+    height: 100px;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.skills a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    color: black;
+    font-family: var(--text-font);
+}
+
+.skills a img {
+    width: 15px;
+}
+
+
+/* sessao dos projetos */
+
+.my-projects {
+    width: 100%;
+}
+
+.row-projetos {
+    display: flex;
+    justify-content: space-evenly;
+    height: 410px;
+}
+
+.projeto {
+    padding: 24px;
+    position: relative;
+}
+
+.bg-img {
+    width: 310px;
+    height: 410px;
+    background-color: black;
+    background-image: url(../img/project-card-image-size\ 1.png);
+    position: absolute;
+    filter: blur(3px);
+    transition: .5s;
+}
+
+.row-projetos a {
+    transition: .5s;
+}
+
+.zoomin{
+    transform: scale(1.07);
+}
+
+.noblur {
+    filter: blur(0px);
+}
+
+.sobreposto{
+    position: absolute;
+    z-index: 1;
+    width: 310px;
+    height: 410px;
+}
+
+.hoverlink{
+    width: 310px;
+}
+
+.projeto h3,
+.projeto p {
+    font-family: var(--text-font);
+}
+
+.projeto h3 {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.projeto p {
+    font-size: 16px;
+}
+
+.projeto div{width: 100%;}
+
+.btn-projetos{
+    display: flex;
+    padding: 64px;
+    align-items: center;
+    justify-content: center;
+}
+
+button{
+    width: 240px;
+    height: 60px;
+    border: none;
+    border-radius: 7px;
+    color: black;
+    margin: 0 32px;
+    font-family: var(--text-font);
+}
+
+i{
+    color: black;
+    padding: 0 24px 0 0 ;
+}
+
 /* footer style */
 
-footer{
+footer {
     padding: var(--default-border-padding);
     display: flex;
     justify-content: space-between;
@@ -85,7 +229,7 @@ footer{
 }
 
 
-footer ul{
+footer ul {
     display: flex;
     list-style: none;
 }
@@ -94,17 +238,18 @@ footer ul li {
     padding: 16px;
 }
 
-.ftr-contato{
+.ftr-contato {
     display: flex;
     flex-direction: column;
     justify-content: center;
     line-height: 2.0;
 }
 
-.footer-logo img{
+.footer-logo img {
     max-width: 52px;
 }
 
-a, a:visited{
+a,
+a:visited {
     text-decoration: none;
 }
