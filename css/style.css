@@ -161,11 +161,18 @@ main .center section p {
 }
 
 .zoomin{
-    transform: scale(1.12);
+    transform: scale(1.07);
 }
 
 .noblur {
     filter: blur(0px);
+}
+
+.sobreposto{
+    position: absolute;
+    z-index: 1;
+    width: 310px;
+    height: 410px;
 }
 
 .projeto h3,
