@@ -175,6 +175,10 @@ main .center section p {
     height: 410px;
 }
 
+.hoverlink{
+    width: 310px;
+}
+
 .projeto h3,
 .projeto p {
     font-family: var(--text-font);
@@ -187,6 +191,30 @@ main .center section p {
 
 .projeto p {
     font-size: 16px;
+}
+
+.projeto div{width: 100%;}
+
+.btn-projetos{
+    display: flex;
+    padding: 64px;
+    align-items: center;
+    justify-content: center;
+}
+
+button{
+    width: 240px;
+    height: 60px;
+    border: none;
+    border-radius: 7px;
+    color: black;
+    margin: 0 32px;
+    font-family: var(--text-font);
+}
+
+i{
+    color: black;
+    padding: 0 24px 0 0 ;
 }
 
 /* footer style */
